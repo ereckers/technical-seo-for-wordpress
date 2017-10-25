@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Technical SEO for WordPress</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -25,210 +25,269 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+
 <section data-markdown>
-	<script type="text/template">
-# Speed Geeking 
-	</script>
+# Technical SEO for WordPress
 </section>
+
 <section data-markdown>
-	<script type="text/template">
-## Setup and configure a search optimized site in minutes
-Created by Ed Reckers / Red Bridge Internet
-<br>for WPSFO Speed Geeking Spring 2017
-	</script>
+![Yoast Screenshot](images/yoast-test-screenshot.png)
 </section>
-<section>
-	<section data-markdown>
-		<script type="text/template">
+
+<section data-markdown>
+## Technical SEO for WordPress 
+Created by Ed Reckers / [Red Bridge Internet](https://www.redbridgenet.com/)
+<br>for WPSFO October 25, 2017
+</section>
+
+<section data-markdown>
 ## About Me 
 * Founder/developer @ Red Bridge Internet
-		</script>
-	</section>
-	<section data-markdown>
-		<script type="text/template">
+</section>
+
+<section data-markdown>
 * We do custom WordPress development, site management, maintenance, and hosting.
 * We work with technology companies in and around the Bay Area.
 * We work closely with SEO firms to implement technical SEO recommendations.
-		</script>
-	</section>
-	<section data-markdown>
-		<script type="text/template">
+</section>
+
+<section data-markdown>
 ## Clients
 
-We've done well working technology companies like:
-
-* Neo4j
-* Qwilt
-* Sentient
-* Capriza
-* Kentik
-* EducationSuperHighway
-		</script>
-	</section>
+Neo4j, Qwilt, Sentient, Capriza, Kentik, EducationSuperHighway
 </section>
-<section>
-    <section data-markdown>
-        <script type="text/template">
-## Passing the Technical SEO Audit
-        </script>
-    </section>
-    <section data-markdown>
-        <script type="text/template">
+
+<section data-markdown>
+## About this Talk
+</section>
+
+<section data-markdown>
+Tools and methods available to WordPress users for Technical SEO.
+
+- General components of Technical SEO
+- Setting the foundation for a search optimized site
+- Passing a Technical SEO audit with WordPress
+- Google services and things
+- Helpful SEO tools, plugins, and services
+</section>
+
+<section data-markdown>
+## General components of Technial SEO
+</section>
+
+<section data-markdown>
 A typical Technical SEO audit from a professional SEO firm will cover the following basics:
-
-- Page urls, meta titles and descriptions
-- XML sitemap (+ human readable sitemap.html)
-- Images and alt tags
-- Headings (relevancy + duplicate H1s)
-- Site architecture / url structure
-- Robots.txt
-- Site index, crawl errors, 404s
-        </script>
-    </section>
-    <section data-markdown>
-        <script type="text/template">
-And more...
-
-- Open Graph tags
-- Knowledge Graph (Schema Markup)
-- HTTPs
-- Pagespeed, Mobile Pagespeed
-- Mobile Usability Test
-
-We want to pass this technical SEO audit.
-        </script>
-    </section>
 </section>
-<section>
-    <section data-markdown>
-        <script type="text/template">
+
+<section data-markdown>
 ## Start with a good foundation
-        </script>
-    </section>
-    <section data-markdown>
-        <script type="text/template">
+</section>
+
+<section data-markdown>
 ## Find a good WordPress dedicated host
 - Takes care of a lot of the basics for a couple extra bucks
 - Easy installs, free ssl certs, security, backups, caching (speed), cdn
-        </script>
-    </section>
-    <section data-markdown>
-        <script type="text/template">
+</section>
+
+<section data-markdown>
 ## Find a good, well supported, and highly rated theme
 - Proper markup
 - Plays well with plugins
 - Responsive
 - We'll use TwentySeventeen
-        </script>
-    </section>
 </section>
-<section>
-    <section data-markdown>
-        <script type="text/template">
+
+<section data-markdown>
 ## Install and Configure WordPress
 Configuring WordPress Settings
-        </script>
-    </section>
-    <section data-markdown>
-        <script type="text/template">
+</section>
+
+<section data-markdown>
 ## General
 * Add a descriptive "Site Title"
 * Add a descriptive "Tagline" (relatively unused, but clears alerts)
 * Set your "Timezone"
-  * Often overlooked: not too SEO related, but helps with Scheduled Posts, and general sanity check
-        </script>
-    </section>
-     <section data-markdown>
-        <script type="text/template">
+* Often overlooked: not too SEO related, but helps with Scheduled Posts, and general sanity check
+</section>
+
+<section data-markdown>
+Add a descriptive title and tagline.
+![Yoast Screenshot](images/wordpress-settings-general-test-part-1.png)
+Set your timezone: _not too SEO related, but helps with Scheduled Posts, and general sanity check_
+![Yoast Screenshot](images/wordpress-settings-general-test-part-2.png)
+</section>
+
+<section data-markdown>
 ## Reading 
 * Be sure "Search Engine Visibility" is unchecked
-        </script>
-    </section>
-   <section data-markdown>
-        <script type="text/template">
+</section>
+
+<section data-markdown>
 ## Discussion
 - Optional: turn off pingbacks and trackbacks
-  - Was once good for SEO, but I haven't seen a good one in 2 years (adds to your comment moderation queue)
-        </script>
-    </section>
-    <section data-markdown>
-        <script type="text/template">
+- Was once good for SEO, but I haven't seen a good one in 2 years (adds to your comment moderation queue)
+</section>
+
+<section data-markdown>
 ## Permalinks
 - Probably the most important settings
 - Set as "Post name" or "Custom Structure"
-  - `http://www.boxbt.com/sample-post/`
-  - `http://www.boxbt.com/blog/%postname%/`
+- `http://www.boxbt.com/sample-post/`
+- `http://www.boxbt.com/blog/%postname%/`
 
 _Custom Structure allows you to prepend directory name to your Blog: /blog/_
 <br>
 _This can help future proof your install (redirecting /blog/ to webroot / is simpler than the other way around)_
-        </script>
-    </section>
 </section>
-<section>
-	<section data-markdown>
-		<script type="text/template">
+
+<section data-markdown>
 ## Install and configure an SEO Plugin
-		</script>
-	</section>
-	<section data-markdown>
-		<script type="text/template">
+</section>
+
+<section data-markdown>
+Many SEO plugins available. Some are:
+
+- Yoast SEO
+- All in One SEO Pack
+- Jetpack Premium SEO Tools
+
+We'll use Yoast SEO for this presentation.
+</section>
+
+<section data-markdown>
 ## Yoast SEO
 * Start by enabling Features : "Advanced settings pages" 
 * Default settings are pretty good. We'll edit...
-		</script>
-	</section>
-	<section data-markdown>
-		<script type="text/template">
+</section>
+
+<section data-markdown>
 * Add Social
 * Enable Sitemaps (default On)
 * Craft your custom Homepage title and description
 * Repeat per page
-		</script>
-	</section>
 </section>
-<section>
-	<section data-markdown>
-		<script type="text/template">
+
+<section data-markdown>
 ## Signup for Google Search Console
-		</script>
-	</section>
-	<section data-markdown>
-		<script type="text/template">
+</section>
+
+<section data-markdown>
 ## Initial setup of Google Search Console
 Start with the tools under "Crawl"
 - Fetch as Google
 - robots.txt Tester
 - Add/Test Sitemaps
 - Return to Yoast SEO
-		</script>
-	</section>
 </section>
-<section>
-	<section data-markdown>
-		<script type="text/template">
-## Install and configure a Sharing plugin
-		</script>
-	</section>
-	<section data-markdown>
-		<script type="text/template">
-## Jetpack
 
-There are many social sharing plugins. These are bonuses.
-
-- Sharing
-- Publicize (optional)
-- Related Posts
-		</script>
-	</section>
-</section>
 <section data-markdown>
-	<script type="text/template">
-## What's Next?
-- Writing good topical and keyword relevant content.
-- Monitor Google Search Console
-	</script>
+## Passing the Technical SEO Audit
 </section>
+
+<section data-markdown>
+## Components of an SEO Technical Audit:
+
+- On-Page SEO
+- Site Architecture
+- Visbility, Crawlability, Indexability
+- Usability
+</section>
+
+<section data-markdown>
+## On-Page SEO
+- Meta Titles and Descriptions
+- Images and Alt tags
+- Headings and Semantic HTML
+</section>
+
+<section data-markdown>
+## Meta Titles and Descriptions
+- Describes what youre page is about
+- Use your targeted (focus) keyword
+- Search engines will ideally use in SERPS
+- Can be overwritten with SEO plugin
+</section>
+
+<section data-markdown>
+[image: yoast-title-description]
+</section>
+
+<section data-markdown>
+## Images and alt tags
+- Assign alt text to all images
+- Use human readable image names
+- Optimize full size images or assign thumnail sizes
+</section>
+
+<section data-markdown>
+[image: wordpress-media-upload]
+</section>
+
+<section data-markdown>
+### Headings and Semantic HTML
+
+- Use semantic HTML to arrange your page information
+- Be sure that h1 tags exist and that there is only 1 per page
+</section>
+
+<section data-markdown>
+more
+</section>
+
+<section data-markdown>
+more
+</section>
+
+<section data-markdown>
+## Site Architecture
+</section>
+
+<section data-markdown>
+Is your site built right? A technical SEO audit will look at the following:
+
+- URL/permalink structure and Information Hierarchy
+- Duplicate Content & Canonicalization
+- Pagination
+- Robots.txt
+- XML Sitemap
+</section>
+
+<section data-markdown>
+### Information Hierarchy & URL Structure
+
+* Don not explain this stuff too much. Explain what you need to do to manage and fix it (technical seo)
+
+- Use logical directory paths
+- Place blog under /blog/
+
+A typical technical product company will have a URL structure that looks like this:
+</section>
+
+<section data-markdown>
+### Duplicate Content & Canonicalization
+
+- They will point out things like:
+- Avoid duplicate content
+- Canonicalization: unifying multiple pages of similar content
+- Redirect non-www versions to www versions or vice versa
+- Redirect all http traffic to https version of site
+</section>
+
+<section data-markdown>
+### Robots.txt
+
+- Robots.txt instructs search engines on how to crawl your site
+</section>
+
+<section data-markdown>
+### XML Sitemap
+
+- Create a sitemap and submit to Google and Bing
+- Configure post types
+</section>
+
+
+
 			</div>
 		</div>
 
