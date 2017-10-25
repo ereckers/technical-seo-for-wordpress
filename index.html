@@ -31,77 +31,94 @@
 </section>
 
 <section data-markdown>
-![Yoast Screenshot](images/yoast-test-screenshot.png)
-</section>
-
-<section data-markdown>
 ## Technical SEO for WordPress 
 Created by Ed Reckers / [Red Bridge Internet](https://www.redbridgenet.com/)
 <br>for WPSFO October 25, 2017
 </section>
 
+<section>
 <section data-markdown>
 ## About Me 
-* Founder/developer @ Red Bridge Internet
+* Principal @ Red Bridge Internet
 </section>
-
 <section data-markdown>
-* We do custom WordPress development, site management, maintenance, and hosting.
-* We work with technology companies in and around the Bay Area.
-* We work closely with SEO firms to implement technical SEO recommendations.
+* Custom WordPress development, site management, maintenance, and hosting services.
+* Work with technology companies in and around the San Francisco Bay Area.
+* Work closely with SEO firms to implement and fix per technical SEO recommendations.
+* This talk reflects the experiences and work that we've done for clients working along with professional SEO firms.
 </section>
-
+<!--
 <section data-markdown>
 ## Clients
+We work with of technology companies such as:
 
 Neo4j, Qwilt, Sentient, Capriza, Kentik, EducationSuperHighway
 </section>
+-->
+</section>
 
+<section>
 <section data-markdown>
 ## About this Talk
 </section>
-
 <section data-markdown>
-Tools and methods available to WordPress users for Technical SEO.
+We'll cover tools and methods available to WordPress users for Technical SEO.
 
 - General components of Technical SEO
 - Setting the foundation for a search optimized site
 - Passing a Technical SEO audit with WordPress
-- Google services and things
+- Google and Google services
 - Helpful SEO tools, plugins, and services
 </section>
-
-<section data-markdown>
-## General components of Technial SEO
 </section>
 
+<section>
+<section data-markdown>
+## General components of Technical SEO
+</section>
 <section data-markdown>
 A typical Technical SEO audit from a professional SEO firm will cover the following basics:
+- On-Page SEO
+- Site Architecture
+- SERP Visibility
+- Usability
+
+We'll cover each of these during this presentation.
+</section>
 </section>
 
+<section>
 <section data-markdown>
 ## Start with a good foundation
+Building blocks of good technical SEO
 </section>
-
 <section data-markdown>
-## Find a good WordPress dedicated host
+## Find a good dedicated WordPress host
 - Takes care of a lot of the basics for a couple extra bucks
-- Easy installs, free ssl certs, security, backups, caching (speed), cdn
+- Easy installs, free ssl certs, security, backups, caching (speed), cdn, they manage the network and machines
 </section>
-
+<!--
+<section data-markdown>
+Some dedicated WordPress hosts:
+- Pantheon
+- WP Engine
+- Flywheel
+</section>
+-->
 <section data-markdown>
 ## Find a good, well supported, and highly rated theme
-- Proper markup
+- Proper symantic markup
 - Plays well with plugins
 - Responsive
-- We'll use TwentySeventeen
+- Supported
+</section>
 </section>
 
+<section>
 <section data-markdown>
 ## Install and Configure WordPress
 Configuring WordPress Settings
 </section>
-
 <section data-markdown>
 ## General
 * Add a descriptive "Site Title"
@@ -109,68 +126,62 @@ Configuring WordPress Settings
 * Set your "Timezone"
 * Often overlooked: not too SEO related, but helps with Scheduled Posts, and general sanity check
 </section>
-
 <section data-markdown>
 Add a descriptive title and tagline.
 ![Yoast Screenshot](images/wordpress-settings-general-test-part-1.png)
-Set your timezone: _not too SEO related, but helps with Scheduled Posts, and general sanity check_
+Set your timezone: not too SEO related, but helps with Scheduled Posts, and general sanity check
 ![Yoast Screenshot](images/wordpress-settings-general-test-part-2.png)
 </section>
-
 <section data-markdown>
 ## Reading 
 * Be sure "Search Engine Visibility" is unchecked
 </section>
-
 <section data-markdown>
 ## Discussion
 - Optional: turn off pingbacks and trackbacks
 - Was once good for SEO, but I haven't seen a good one in 2 years (adds to your comment moderation queue)
 </section>
-
 <section data-markdown>
 ## Permalinks
 - Probably the most important settings
 - Set as "Post name" or "Custom Structure"
-- `http://www.boxbt.com/sample-post/`
-- `http://www.boxbt.com/blog/%postname%/`
 
-_Custom Structure allows you to prepend directory name to your Blog: /blog/_
-<br>
-_This can help future proof your install (redirecting /blog/ to webroot / is simpler than the other way around)_
+![Yoast Screenshot](images/wordpress-settings-permalinks.png)
+</section>
 </section>
 
+<section>
 <section data-markdown>
 ## Install and configure an SEO Plugin
 </section>
-
 <section data-markdown>
 Many SEO plugins available. Some are:
 
-- Yoast SEO
-- All in One SEO Pack
-- Jetpack Premium SEO Tools
+- [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/)
+- [All in One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/)
+- [Jetpack Premium SEO Tools](https://jetpack.com/support/seo-tools/)
 
 We'll use Yoast SEO for this presentation.
 </section>
-
 <section data-markdown>
 ## Yoast SEO
 * Start by enabling Features : "Advanced settings pages" 
 * Default settings are pretty good. We'll edit...
 </section>
-
 <section data-markdown>
 * Add Social
 * Enable Sitemaps (default On)
 * Craft your custom Homepage title and description
 * Repeat per page
 </section>
-
-<section data-markdown>
-## Signup for Google Search Console
 </section>
 
+<section>
+<section data-markdown>
+## Signup for Google Search Console
+[https://www.google.com/webmasters/tools/](https://www.google.com/webmasters/tools/)
+</section>
+<!--
 <section data-markdown>
 ## Initial setup of Google Search Console
 Start with the tools under "Crawl"
@@ -179,81 +190,83 @@ Start with the tools under "Crawl"
 - Add/Test Sitemaps
 - Return to Yoast SEO
 </section>
+-->
+</section>
 
+<section>
 <section data-markdown>
 ## Passing the Technical SEO Audit
 </section>
-
 <section data-markdown>
 ## Components of an SEO Technical Audit:
 
 - On-Page SEO
 - Site Architecture
-- Visbility, Crawlability, Indexability
+- SERP Visibility
 - Usability
 </section>
+</section>
 
+<section>
 <section data-markdown>
 ## On-Page SEO
 - Meta Titles and Descriptions
 - Images and Alt tags
 - Headings and Semantic HTML
 </section>
-
 <section data-markdown>
 ## Meta Titles and Descriptions
-- Describes what youre page is about
-- Use your targeted (focus) keyword
+- Describes what your page is about
+- Should contain your targeted (focus) keyword
 - Search engines will ideally use in SERPS
+- Make sure these are complete for every page
 - Can be overwritten with SEO plugin
 </section>
-
 <section data-markdown>
-[image: yoast-title-description]
+![Yoast Screenshot](images/wordpress-edit-page-kentik-detect.png)
 </section>
-
+<section data-markdown>
+![Yoast Screenshot](images/yoast-snippet-editor-kentik-detect.png)
+</section>
+<section data-markdown>
+![Yoast Screenshot](images/source-meta-title-description-kentik-detect.png)
+</section>
+<section data-markdown>
+![Yoast Screenshot](images/google-serp-kentik-detect.png)
+</section>
 <section data-markdown>
 ## Images and alt tags
 - Assign alt text to all images
 - Use human readable image names
 - Optimize full size images or assign thumnail sizes
 </section>
-
 <section data-markdown>
-[image: wordpress-media-upload]
-</section>
-
-<section data-markdown>
-### Headings and Semantic HTML
+## Headings and Semantic HTML
 
 - Use semantic HTML to arrange your page information
 - Be sure that h1 tags exist and that there is only 1 per page
 </section>
-
-<section data-markdown>
-more
 </section>
 
-<section data-markdown>
-more
-</section>
-
+<section>
 <section data-markdown>
 ## Site Architecture
 </section>
-
 <section data-markdown>
-Is your site built right? A technical SEO audit will look at the following:
+Taking a look at your site's architecture:
 
-- URL/permalink structure and Information Hierarchy
-- Duplicate Content & Canonicalization
+- URL Structure
+- Canonicalization
 - Pagination
 - Robots.txt
 - XML Sitemap
+- HTML Sitemap
+- Header Response Codes
+- Crawl Test
+- HTTP and HTTPS
 </section>
-
 <section data-markdown>
-### Information Hierarchy & URL Structure
+### URL Structure
 
 * Don not explain this stuff too much. Explain what you need to do to manage and fix it (technical seo)
 
@@ -262,9 +275,8 @@ Is your site built right? A technical SEO audit will look at the following:
 
 A typical technical product company will have a URL structure that looks like this:
 </section>
-
 <section data-markdown>
-### Duplicate Content & Canonicalization
+### Canonicalization
 
 - They will point out things like:
 - Avoid duplicate content
@@ -272,21 +284,195 @@ A typical technical product company will have a URL structure that looks like th
 - Redirect non-www versions to www versions or vice versa
 - Redirect all http traffic to https version of site
 </section>
-
 <section data-markdown>
 ### Robots.txt
 
 - Robots.txt instructs search engines on how to crawl your site
 </section>
-
 <section data-markdown>
 ### XML Sitemap
 
+- Sitemaps instruct search engines on which pages to index
+- If your site doesn't already have one create one
 - Create a sitemap and submit to Google and Bing
-- Configure post types
+- Configure your sitemap to display Posts, Pages, and other Post Types
+</section>
+<section data-markdown>
+### Header Response Codes (Redirects)
+</section>
+<section data-markdown>
+### Crawl Test
+- Crawl your site as Google does through Search Console
+</section>
+<section data-markdown>
+![Search Console](images/search-console-fetch-as-google.png)
+</section>
+<section data-markdown>
+### HTTP and HTTPS
+- Use HTTPS. This is not negotiable.
+- Good hosts will provide free SSL certificates
+	- or at least provide a simple path to it
+</section>
 </section>
 
+<section>
+<section data-markdown>
+## SERP Visibility
+How search engines see your site
+</section>
+<section data-markdown>
+- Uptime
+- Crawl Test
+- Header Response Codes (Redirects)
+- Pages Indexed (Sitemaps) + Bing?
+- Schema and Rich Snippets
+- Knowledge Graph & Sitelinks
+- Site Indexation Issues (Crawl Errors)
+</section>
+<section data-markdown>
+### Uptime 
+Search engines need access to your site
+- Your site must be up and malware-free to be indexed
+- Google will blacklist malware infected sites
+- Intermittent uptime and extremely low response times affect bounce rate
+- Points for dedicated WordPress hosts
+- Monitor uptime with: [Pingdom](https://www.pingdom.com/), [Uptime Robot](https://uptimerobot.com/) 
+</section>
+<section data-markdown>
+### Pages Indexed (Sitemaps) + Bing
+- Check that your pages are bing indexed
+- Google and Bing
+- Make sure they're not over-indexing your site
+  - Back to Canonicalization and robots.txt, noindex setting
+</section>
+<section data-markdown>
+### Schema and Rich Snippets
+- markup site with organization and sitelinks search schema
+- check/test for schema markup errors
+- this is a large topic that can't be covered here, but you can start with an organization tag:
 
+```
+schema markup for organization
+
+- does Yoast handle it?
+```
+</section>
+<section data-markdown>
+### Knowledge Graph & Sitelinks
+- apply organizational schema.org markup to ensure knowlege graph fully populates
+</section>
+<section data-markdown>
+### Site Indexation Issues (Crawl Errors)
+- check for index errors
+- check for extra indexing (extra domains)
+- want it to roughly match the amount of links in your sitemap
+</section>
+</section>
+
+<section>
+<section data-markdown>
+## Usability 
+Is your website genenerally navigable.
+</section>
+<section data-markdown>
+- Navigation
+- PageSpeed
+- Mobile Usability Test
+- Custom 404 page
+- HTML Sitemap
+</section>
+<section data-markdown>
+### Mobile Usability Test
+- Test with Google’s [Mobile Friendly Test](https://search.google.com/test/mobile-friendly)
+</section>
+<section data-markdown>
+### PageSpeed
+- PageSpeed is an important ranking factor
+- Make it fast for both Desktop and Mobile
+- A subject too deep for this presentation
+</section>
+<section data-markdown>
+Here's some tools to help:
+
+- Speed Tests: [WebPagetest](http://www.webpagetest.org/), [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/), [GTmetrix](https://gtmetrix.com/), [Pingdom](https://tools.pingdom.com/)
+- Content Delivery Networks (CDN): [Cloudflare](https://www.cloudflare.com/), [MaxCDN](https://www.maxcdn.com/), [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
+</section>
+<section data-markdown>
+### Navigation
+- Working navigation
+- Information Heirarchy
+- Siloing
+- Work in hub pages
+  - ie, /products/
+</section>
+<section data-markdown>
+### Custom 404 Page
+- create custom 404 page
+- add nav links and search
+- options
+  - plugin for this
+  - create in pure html
+  - create your own template
+</section>
+<section data-markdown>
+### HTML Sitemap
+- create and human readable HTML Sitemap
+- options
+  - plugin for this
+  - create in pure html
+  - create your own template
+</section>
+</section>
+
+<section data-markdown>
+## Wrapping Up the Technical SEO Audit 
+</section>
+
+<section>
+<section data-markdown>
+## Google
+</section>
+<section data-markdown>
+### Google AMP Pages
+- Advanced Mobile Pages
+- How to setup on WordPress w/ Jetpack
+</section>
+<section data-markdown>
+### Google News
+</section>
+<section data-markdown>
+### Google Tag Manager 
+GTM for GA and Marketing Intelligence/Metrics
+</section>
+</section>
+
+<section>
+<section data-markdown>
+## Helpful SEO Tools and Methods
+</section>
+<section data-markdown>
+### Breadcrumbs
+* [Yoast Breadcrumbs](https://yoast.com/wordpress/plugins/seo/#breadcrumbs)
+* [Jetpack Site Breadcrumbs](https://jetpack.com/support/site-breadcrumbs/)
+</section>
+<section data-markdown>
+### Related Posts
+* [Yet Another Related Posts Plugin (YARPP)](https://wordpress.org/plugins/yet-another-related-posts-plugin/)
+* [Jetpack Related Posts](https://jetpack.com/support/related-posts/)
+</section>
+<section data-markdown>
+### Custom Field Heavy Sites
+
+Here's a couple tools that help:
+
+* [ACF Content Analysis for Yoast SEO](https://wordpress.org/plugins/acf-content-analysis-for-yoast-seo/)
+* [SearchWP](https://searchwp.com/)
+</section>
+</section>
+
+<section data-markdown>
+## That's It
+</section>
 
 			</div>
 		</div>
