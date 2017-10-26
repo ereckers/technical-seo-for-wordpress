@@ -67,7 +67,7 @@ We'll cover tools and methods available to WordPress users for Technical SEO.
 - General components of Technical SEO
 - Setting the foundation for a search optimized site
 - Passing a Technical SEO audit with WordPress
-- Google and Google services
+- Quick overview of Google and Google services
 - Helpful SEO tools, plugins, and services
 </section>
 </section>
@@ -128,9 +128,9 @@ Configuring WordPress Settings
 </section>
 <section data-markdown>
 Add a descriptive title and tagline.
-![Yoast Screenshot](images/wordpress-settings-general-test-part-1.png)
+![](images/wordpress-settings-general-test-part-1.png)
 Set your timezone: not too SEO related, but helps with Scheduled Posts, and general sanity check
-![Yoast Screenshot](images/wordpress-settings-general-test-part-2.png)
+![](images/wordpress-settings-general-test-part-2.png)
 </section>
 <section data-markdown>
 ## Reading 
@@ -146,7 +146,7 @@ Set your timezone: not too SEO related, but helps with Scheduled Posts, and gene
 - Probably the most important settings
 - Set as "Post name" or "Custom Structure"
 
-![Yoast Screenshot](images/wordpress-settings-permalinks.png)
+![](images/wordpress-settings-permalinks.png)
 </section>
 </section>
 
@@ -163,16 +163,30 @@ Many SEO plugins available. Some are:
 
 We'll use Yoast SEO for this presentation.
 </section>
+<!--
+<section data-markdown>
+There is a Wizard that's pretty decent once you run through it.
+![](images/yoast-configuration-wizard.png)
+</section>
+-->
 <section data-markdown>
 ## Yoast SEO
 * Start by enabling Features : "Advanced settings pages" 
+![](images/yoast-advanced-settings.png)
+* Enable Sitemaps (default On)
 * Default settings are pretty good. We'll edit...
 </section>
 <section data-markdown>
-* Add Social
-* Enable Sitemaps (default On)
+* Add Social (sets you up for Schema)
+![](images/yoast-social.png)
+</section>
+<section data-markdown>
 * Craft your custom Homepage title and description
-* Repeat per page
+![](images/yoast-titles-metas-homepage.png)
+</section>
+<section data-markdown>
+* This brings you to the Homepage and Yoast SEO metabox
+![](images/yoast-seo-meta-homepage.png)
 </section>
 </section>
 
@@ -210,6 +224,10 @@ Start with the tools under "Crawl"
 <section>
 <section data-markdown>
 ## On-Page SEO
+The HTML source code search engines will be indexing
+</section>
+<section data-markdown>
+Taking a look at your site's on-page SEO:
 - Meta Titles and Descriptions
 - Images and Alt tags
 - Headings and Semantic HTML
@@ -238,7 +256,7 @@ Start with the tools under "Crawl"
 ## Images and alt tags
 - Assign alt text to all images
 - Use human readable image names
-- Optimize full size images or assign thumnail sizes
+- Optimize full size images or assign thumbnail sizes
 </section>
 <section data-markdown>
 ## Headings and Semantic HTML
@@ -251,43 +269,77 @@ Start with the tools under "Crawl"
 <section>
 <section data-markdown>
 ## Site Architecture
+The technical structure of your website
 </section>
 <section data-markdown>
 Taking a look at your site's architecture:
 
 - URL Structure
 - Canonicalization
-- Pagination
 - Robots.txt
 - XML Sitemap
 - HTML Sitemap
-- Header Response Codes
 - Crawl Test
 - HTTP and HTTPS
 </section>
 <section data-markdown>
 ### URL Structure
 
-* Don not explain this stuff too much. Explain what you need to do to manage and fix it (technical seo)
+- Generally looking for well-optimized and logical site organization
+- Page heirarchy, directory structure, "siloing"
+- A couple quick examples:
 
-- Use logical directory paths
-- Place blog under /blog/
+</section>
+<section data-markdown>
+A typical technology product company would organize products like so:
+```
+## Two products
+https://sysdig.com/product/monitor/
+https://sysdig.com/product/secure/
+## Product pricing
+https://sysdig.com/product/monitor/pricing/
+https://sysdig.com/product/secure/pricing/
+```
+</section>
+<section data-markdown>
+Organizing "company" info:
+```
+https://qwilt.com/company/
+https://qwilt.com/company/our-story/
+https://qwilt.com/company/board/
+https://qwilt.com/company/articles/
+https://qwilt.com/company/press-releases/
+```
 
-A typical technical product company will have a URL structure that looks like this:
+Those are some quick examples, but this is a large subject in and of itself.
+
 </section>
 <section data-markdown>
 ### Canonicalization
 
-- They will point out things like:
-- Avoid duplicate content
 - Canonicalization: unifying multiple pages of similar content
+- You don't want multiple URLs serving the same content
+- This is "duplicate content" and you want to avoid that
+- Make sure your site serviers a single version of you content
 - Redirect non-www versions to www versions or vice versa
-- Redirect all http traffic to https version of site
+- Redirect all http traffic to https version of your site
 </section>
+<!--
+<section data-markdown>
+### Header Response Codes (Redirects)
+</section>
+-->
+<!--
+<section data-markdown>
+### Pagination
+</section>
+-->
 <section data-markdown>
 ### Robots.txt
 
 - Robots.txt instructs search engines on how to crawl your site
+- Make sure that you have one and it is in the right form
+- Use Google Seach Console to test your robots.txt file
 </section>
 <section data-markdown>
 ### XML Sitemap
@@ -296,9 +348,6 @@ A typical technical product company will have a URL structure that looks like th
 - If your site doesn't already have one create one
 - Create a sitemap and submit to Google and Bing
 - Configure your sitemap to display Posts, Pages, and other Post Types
-</section>
-<section data-markdown>
-### Header Response Codes (Redirects)
 </section>
 <section data-markdown>
 ### Crawl Test
@@ -321,12 +370,10 @@ A typical technical product company will have a URL structure that looks like th
 How search engines see your site
 </section>
 <section data-markdown>
+Taking a look at your site's SERP visibility:
 - Uptime
-- Crawl Test
-- Header Response Codes (Redirects)
 - Pages Indexed (Sitemaps) + Bing?
 - Schema and Rich Snippets
-- Knowledge Graph & Sitelinks
 - Site Indexation Issues (Crawl Errors)
 </section>
 <section data-markdown>
@@ -347,34 +394,88 @@ Search engines need access to your site
 </section>
 <section data-markdown>
 ### Schema and Rich Snippets
-- markup site with organization and sitelinks search schema
-- check/test for schema markup errors
-- this is a large topic that can't be covered here, but you can start with an organization tag:
-
+- Add organization and sitelinks search schema
+- Check/test for schema markup errors
+- Yoast SEO plugin creates Website and Organization schema markup
+- This is a large topic that can't be covered here, but you can start with an organization tag:
+</section>
+<section data-markdown>
+You can paste in custom Schema markup:
 ```
-schema markup for organization
-
-- does Yoast handle it?
+{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "url": "https://www.kentik.com",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.kentik.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    "logo": "https://wpcdn.kentik.com/wp-content/themes/kentik/assets/img/kentik-logo.png",
+    "contactPoint" : [
+    { "@type" : "ContactPoint",
+    "telephone" : "+1 844-356-3278",
+    "contactType" : "customer service"
+    } ],
+    "sameAs" : [ "https://www.facebook.com/kentiktech",
+    "https://twitter.com/kentikinc",
+    "https://www.linkedin.com/company/kentik"]
+}
 ```
 </section>
+<section data-markdown>
+Yoast provides Website and Organization Schema markup:
+```
+{
+   "@context":"http:\/\/schema.org",
+   "@type":"WebSite",
+   "@id":"#website",
+   "url":"https:\/\/www.sentient.ai\/",
+   "name":"Sentient Technologies Holdings Limited",
+   "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https:\/\/www.sentient.ai\/?s={search_term_string}",
+      "query-input":"required name=search_term_string"
+   }
+}
+{
+   "@context":"http:\/\/schema.org",
+   "@type":"Organization",
+   "url":"https:\/\/www.sentient.ai\/",
+   "sameAs":[
+
+   ],
+   "@id":"#organization",
+   "name":"Sentient Technologies",
+   "logo":"https:\/\/www.sentient.ai\/wp-content\/uploads\/2017\/03\/logo-sentient-black-1.svg"
+}
+```
+</section>
+<section data-markdown>
+Test using the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/)
+![Structured Data Testing Tool](images/google-structured-data-testing-tool.png)
+</section>
+<!--
 <section data-markdown>
 ### Knowledge Graph & Sitelinks
 - apply organizational schema.org markup to ensure knowlege graph fully populates
 </section>
+-->
 <section data-markdown>
-### Site Indexation Issues (Crawl Errors)
-- check for index errors
-- check for extra indexing (extra domains)
-- want it to roughly match the amount of links in your sitemap
+### Site Indexation Issues
+- Check for index errors
+- Check for extra indexing (extra domains)
+- Want it to roughly match the amount of links in your sitemap
 </section>
 </section>
 
 <section>
 <section data-markdown>
 ## Usability 
-Is your website genenerally navigable.
+Is your website genenerally navigable
 </section>
 <section data-markdown>
+Taking a look at your site's usability:
 - Navigation
 - PageSpeed
 - Mobile Usability Test
@@ -383,7 +484,15 @@ Is your website genenerally navigable.
 </section>
 <section data-markdown>
 ### Mobile Usability Test
+- Mobile usability is a ranking factor for Google
+- Your site needs to be usable on mobile devices
 - Test with Google’s [Mobile Friendly Test](https://search.google.com/test/mobile-friendly)
+</section>
+<section data-markdown>
+![Yoast Screenshot](images/mobile-friendly-test-sentient.png)
+</section>
+<section data-markdown>
+![Yoast Screenshot](images/mobile-friendly-test-sentient-errors.png)
 </section>
 <section data-markdown>
 ### PageSpeed
@@ -396,6 +505,10 @@ Here's some tools to help:
 
 - Speed Tests: [WebPagetest](http://www.webpagetest.org/), [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/), [GTmetrix](https://gtmetrix.com/), [Pingdom](https://tools.pingdom.com/)
 - Content Delivery Networks (CDN): [Cloudflare](https://www.cloudflare.com/), [MaxCDN](https://www.maxcdn.com/), [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
+- [Autoptimize](https://wordpress.org/plugins/autoptimize/)
+
+_Testing services are behind when it comes to HTTP2_
+
 </section>
 <section data-markdown>
 ### Navigation
@@ -407,42 +520,61 @@ Here's some tools to help:
 </section>
 <section data-markdown>
 ### Custom 404 Page
-- create custom 404 page
-- add nav links and search
-- options
-  - plugin for this
-  - create in pure html
-  - create your own template
+- Your site should return a 404 page
+- Create a custom 404 page
+- Include navigation links and search
+- Options
+  - Quality themes should come with a 404 page template
+  - Plugins: [404page](https://wordpress.org/plugins/404page/)
+  - Create your own custom template
 </section>
 <section data-markdown>
 ### HTML Sitemap
-- create and human readable HTML Sitemap
-- options
-  - plugin for this
-  - create in pure html
-  - create your own template
+- Create and human readable HTML Sitemap
+- Options
+  - Install a plugin for this
+  - Create in pure html
+  - Create your own template
 </section>
 </section>
 
 <section data-markdown>
 ## Wrapping Up the Technical SEO Audit 
+- On-Page SEO
+- Site Architecture
+- SERP Visibility
+- Usability
 </section>
 
 <section>
 <section data-markdown>
 ## Google
+Google and Google services with WordPress
 </section>
 <section data-markdown>
 ### Google AMP Pages
-- Advanced Mobile Pages
-- How to setup on WordPress w/ Jetpack
+- Google's [Accelerated Mobile Pages](https://www.ampproject.org/)
+- How to setup on WordPress w/ Jetpack + Yoast
+- WordPress [AMP](https://wordpress.org/plugins/amp/) provides technical implementation
+- [Glue for Yoast SEO & AMP](https://wordpress.org/plugins/glue-for-yoast-seo-amp/) makes sure pages contain valid AMP code
+- Requires a simplified and clean custom template
+</section>
+<section data-markdown>
+Search Console Accelerated Mobile Pages
+![Yoast Screenshot](images/search-console-amp.png)
 </section>
 <section data-markdown>
 ### Google News
+- [Google News](https://news.google.com/news/) requires an account setup
+- Yoast's [News SEO for WordPress](https://yoast.com/wordpress/plugins/news-seo/) provides on-page markup and the sitemaps
 </section>
 <section data-markdown>
 ### Google Tag Manager 
-GTM for GA and Marketing Intelligence/Metrics
+* GTM for GA and Marketing Intelligence/Metrics
+* [Google Tag Manager](https://www.google.com/analytics/tag-manager/)
+* Gives your marketing people flexibility and developers one less thing to handle
+* Load Google Analytics, Marketing Scripts, handle Click Event tracking, and more
+* Learn the Google Data Layer
 </section>
 </section>
 
@@ -456,6 +588,7 @@ GTM for GA and Marketing Intelligence/Metrics
 * [Jetpack Site Breadcrumbs](https://jetpack.com/support/site-breadcrumbs/)
 </section>
 <section data-markdown>
+
 ### Related Posts
 * [Yet Another Related Posts Plugin (YARPP)](https://wordpress.org/plugins/yet-another-related-posts-plugin/)
 * [Jetpack Related Posts](https://jetpack.com/support/related-posts/)
@@ -472,6 +605,51 @@ Here's a couple tools that help:
 
 <section data-markdown>
 ## That's It
+</section>
+
+<section>
+<section data-markdown>
+## Link Glossary (Page 1)
+- [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/)
+- [All in One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/)
+- [Jetpack Premium SEO Tools](https://jetpack.com/support/seo-tools/)
+- [Google Search Console](https://www.google.com/webmasters/tools/)
+- [Moz](https://moz.com/)
+- [Pingdom](https://www.pingdom.com/)
+- [Uptime Robot](https://uptimerobot.com/)
+- [Mobile Friendly Test](https://search.google.com/test/mobile-friendly)
+</section>
+<section data-markdown>
+## Link Glossary (Page 2)
+- [WebPagetest](http://www.webpagetest.org/)
+- [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+- [GTmetrix](https://gtmetrix.com/)
+- [Pingdom](https://tools.pingdom.com/)
+- [Cloudflare](https://www.cloudflare.com/)
+- [MaxCDN](https://www.maxcdn.com/)
+- [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
+- [Autoptimize](https://wordpress.org/plugins/autoptimize/)
+</section>
+<section data-markdown>
+## Link Glossary (Page 3)
+* [404page](https://wordpress.org/plugins/404page/)
+* [Accelerated Mobile Pages](https://www.ampproject.org/)
+* [AMP](https://wordpress.org/plugins/amp/)
+* [Glue for Yoast SEO & AMP](https://wordpress.org/plugins/glue-for-yoast-seo-amp/)
+* [Google News](https://news.google.com/news/)
+* [News SEO for WordPress](https://yoast.com/wordpress/plugins/news-seo/)
+* [Google Tag Manager](https://www.google.com/analytics/tag-manager/)
+* [Yoast Breadcrumbs](https://yoast.com/wordpress/plugins/seo/#breadcrumbs)
+</section>
+<section data-markdown>
+## Link Glossary (Page 4)
+* [Jetpack Site Breadcrumbs](https://jetpack.com/support/site-breadcrumbs/)
+* [Yet Another Related Posts Plugin (YARPP)](https://wordpress.org/plugins/yet-another-related-posts-plugin/)
+* [Jetpack Related Posts](https://jetpack.com/support/related-posts/)
+* [ACF Content Analysis for Yoast SEO](https://wordpress.org/plugins/acf-content-analysis-for-yoast-seo/)
+* [SearchWP](https://searchwp.com/)
+* [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/u/0/)
+</section>
 </section>
 
 			</div>
