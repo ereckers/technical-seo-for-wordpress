@@ -241,15 +241,19 @@ Taking a look at your site's on-page SEO:
 - Can be overwritten with SEO plugin
 </section>
 <section data-markdown>
+Post/Page title on WordPress Edit screen
 ![Yoast Screenshot](images/wordpress-edit-page-kentik-detect.png)
 </section>
 <section data-markdown>
+Yoast SEO Snippet Editor
 ![Yoast Screenshot](images/yoast-snippet-editor-kentik-detect.png)
 </section>
 <section data-markdown>
+HTML Source Code
 ![Yoast Screenshot](images/source-meta-title-description-kentik-detect.png)
 </section>
 <section data-markdown>
+Google search results page (SERP)
 ![Yoast Screenshot](images/google-serp-kentik-detect.png)
 </section>
 <section data-markdown>
@@ -318,9 +322,9 @@ Those are some quick examples, but this is a large subject in and of itself.
 ### Canonicalization
 
 - Canonicalization: unifying multiple pages of similar content
-- You don't want multiple URLs serving the same content
-- This is "duplicate content" and you want to avoid that
-- Make sure your site serviers a single version of you content
+- Don't want multiple URLs serving the same content
+- This is "duplicate content", you want to avoid that
+- Make sure you serve a single version of your content
 - Redirect non-www versions to www versions or vice versa
 - Redirect all http traffic to https version of your site
 </section>
@@ -372,7 +376,7 @@ How search engines see your site
 <section data-markdown>
 Taking a look at your site's SERP visibility:
 - Uptime
-- Pages Indexed (Sitemaps) + Bing?
+- Pages Indexed (Sitemaps)
 - Schema and Rich Snippets
 - Site Indexation Issues (Crawl Errors)
 </section>
@@ -386,11 +390,11 @@ Search engines need access to your site
 - Monitor uptime with: [Pingdom](https://www.pingdom.com/), [Uptime Robot](https://uptimerobot.com/) 
 </section>
 <section data-markdown>
-### Pages Indexed (Sitemaps) + Bing
-- Check that your pages are bing indexed
-- Google and Bing
+### Pages Indexed (Sitemaps)
+- Check that your pages are being indexed
 - Make sure they're not over-indexing your site
-  - Back to Canonicalization and robots.txt, noindex setting
+- Back to Canonicalization and robots.txt, noindex setting
+- You can 'Disallow' or noindex Categories and Tags
 </section>
 <section data-markdown>
 ### Schema and Rich Snippets
@@ -462,10 +466,12 @@ Test using the [Structured Data Testing Tool](https://search.google.com/structur
 </section>
 -->
 <section data-markdown>
-### Site Indexation Issues
-- Check for index errors
-- Check for extra indexing (extra domains)
-- Want it to roughly match the amount of links in your sitemap
+### Site Indexation Issues (Crawl Errors)
+- Use Google Seach Console and run the following reports
+- Google Index > Index Status
+- Google Index > Blocked Resources
+- Crawl > Crawl Errors
+- You want the indexed pages to roughly match the amount of links in your sitemap
 </section>
 </section>
 
@@ -476,23 +482,10 @@ Is your website genenerally navigable
 </section>
 <section data-markdown>
 Taking a look at your site's usability:
-- Navigation
 - PageSpeed
 - Mobile Usability Test
 - Custom 404 page
 - HTML Sitemap
-</section>
-<section data-markdown>
-### Mobile Usability Test
-- Mobile usability is a ranking factor for Google
-- Your site needs to be usable on mobile devices
-- Test with Google’s [Mobile Friendly Test](https://search.google.com/test/mobile-friendly)
-</section>
-<section data-markdown>
-![Yoast Screenshot](images/mobile-friendly-test-sentient.png)
-</section>
-<section data-markdown>
-![Yoast Screenshot](images/mobile-friendly-test-sentient-errors.png)
 </section>
 <section data-markdown>
 ### PageSpeed
@@ -511,6 +504,21 @@ _Testing services are behind when it comes to HTTP2_
 
 </section>
 <section data-markdown>
+### Mobile Usability Test
+- Mobile usability is a ranking factor for Google
+- Your site needs to be usable on mobile devices
+- Test with Google’s [Mobile Friendly Test](https://search.google.com/test/mobile-friendly)
+</section>
+<section data-markdown>
+Mobile usability test results
+![Yoast Screenshot](images/mobile-friendly-test-sentient.png)
+</section>
+<section data-markdown>
+Quick look at the mobile usability errors
+![Yoast Screenshot](images/mobile-friendly-test-sentient-errors.png)
+</section>
+<!--
+<section data-markdown>
 ### Navigation
 - Working navigation
 - Information Heirarchy
@@ -518,6 +526,7 @@ _Testing services are behind when it comes to HTTP2_
 - Work in hub pages
   - ie, /products/
 </section>
+-->
 <section data-markdown>
 ### Custom 404 Page
 - Your site should return a 404 page
@@ -584,6 +593,7 @@ Search Console Accelerated Mobile Pages
 </section>
 <section data-markdown>
 ### Breadcrumbs
+* Breadcrumbs through Yoast will provide you with another Schema Markup Opportunity
 * [Yoast Breadcrumbs](https://yoast.com/wordpress/plugins/seo/#breadcrumbs)
 * [Jetpack Site Breadcrumbs](https://jetpack.com/support/site-breadcrumbs/)
 </section>
